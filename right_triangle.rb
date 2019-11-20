@@ -1,4 +1,3 @@
-
 puts "+=================================+"
 puts "|       Анализ треугольника       |"
 puts "+=================================+"
@@ -14,16 +13,16 @@ c = gets.chomp.to_f
 
 result = []
 
-if a == b or b == c or c == a
+if a == b || b == c || c == a
   result.push('равнобедренный')
 end
 
-if a == b and a == c then
+if a == b && a == c
   result.push('равносторонний')
 end
 
-g = [a,b,c].max
-sides = [a,b,c].min(2)
+g = [a, b, c].max
+sides = [a, b, c].min(2)
 
 if g**2 == sides[0]**2 + sides[1]**2
   result.push('прямоугольный')
